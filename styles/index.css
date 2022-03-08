@@ -1,0 +1,82 @@
+*{
+    @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+    font-family: 'Russo One', sans-serif;
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    --font-color: #fffef2;
+}
+a{
+    text-decoration: none;
+}
+body{
+
+    background: radial-gradient(circle,
+                rgba(2,0,36,0.05085784313725494) 0%,
+                rgba(121,9,117,0.3757878151260504) 35%, 
+                rgba(108,9,125,0.4374124649859944) 37%, 
+                rgba(241,255,0,0.19091386554621848) 100%);
+}
+.header__main{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 100%;
+    height: 20vh;
+    place-items: center;
+}
+.header__main-logo{
+    display: grid;
+    grid-column: 1;
+}
+.header__main-logo > img{
+    width: 90%;
+}
+
+.header__main-title > h1{
+    font-size: 60px;
+    color: var(--font-color);
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.753);
+
+}
+.main__page {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.navbar {
+    grid-column: 7/ 9;
+}
+.navbar > .main-nav{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+.main-nav > .baker,
+.main-nav > .client{
+    border: 1px solid black ;
+    width: 80%;
+    padding: 20px;
+}
+
+.principal-page{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 80vh;
+}
+.principal-page > .flavors-main,
+.principal-page > .adornos-main{
+    display: grid;
+    grid-template-rows: 5% 1fr;
+    place-items: center;
+}
+.flavors-container,
+.adornos-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    height: 80%;
+    border: 1px solid black;
+}
+.flavors-container > .box{
+    border: 1px solid black;
+}
